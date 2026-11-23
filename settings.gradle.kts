@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Mid_Exam_Mohamed_AlFarani"
+rootProject.name = "MohamedAlFarani_1320236401_ArtSpace"
 include(":app")
  

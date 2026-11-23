@@ -1,0 +1,139 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFF5ED"
+    tools:context=".MainActivity">
+
+    <!-- Left Side: Artwork Image -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/artworkCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 / 6"
+            android:textSize="18sp"
+            android:textColor="#29211C"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/artworkCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp">
+
+            <ImageView
+                android:id="@+id/artworkImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/artwork_1"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Artwork image" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Right Side: Information and Buttons -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!-- Artwork Information -->
+        <LinearLayout
+            android:id="@+id/artworkInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFEADE">
+
+            <TextView
+                android:id="@+id/artworkTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deep Field Stellar Deaths"
+                android:textSize="24sp"
+                android:textColor="#29211C" />
+
+            <TextView
+                android:id="@+id/artworkArtistYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="NASA / ESA / CSA (2022)"
+                android:textSize="15sp"
+                android:textColor="#29211C" />
+
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:id="@+id/navigationButtons"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previousButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="7dp"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:minHeight="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:enabled="false"
+                android:textColor="@color/artspace_button_text"
+                app:backgroundTint="@color/artspace_button_tint"
+                app:cornerRadius="25dp" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="7dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:minHeight="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:textColor="@color/artspace_button_text"
+                app:backgroundTint="@color/artspace_button_tint"
+                app:cornerRadius="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
